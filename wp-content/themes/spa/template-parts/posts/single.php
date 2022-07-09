@@ -2,8 +2,6 @@
 
 <?php /* Start the Loop */ ?>
 
-<?php while ( have_posts() ) : the_post(); ?>
-
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<div class="article-inner <?php flatsome_blog_article_classes(); ?>">
 		<?php
@@ -15,7 +13,10 @@
 	</div>
 </article>
 
-<?php endwhile; ?>
+<div class="rating">
+	<?php echo do_shortcode('[ratemypost id='.the_ID().'] ')?>
+	<?php echo do_shortcode('[ratemypost-result id='.the_ID().'″] ')?>
+</div>
 
 <?php else : ?>
 

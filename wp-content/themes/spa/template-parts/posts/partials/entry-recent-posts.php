@@ -1,7 +1,7 @@
 <?php
 if (!defined('ABSPATH')) exit; // Exit if accessed directly
 
-$posts_per_page = 6;
+$posts_per_page = 13;
 $args = array(
     'post_type'       => 'course',
     'post_status'     => 'publish',
@@ -39,7 +39,7 @@ $loop = new WP_Query($args);
                             if ($post_img) {
                             ?>
                                 <figure class="alignwide wp-block-post-featured-image">
-                                    <a href="' . $post_url . '">
+                                    <a href="<?php echo $post_url;?>">
                                         <img width="264" height="214" src="<?php echo $post_img; ?>" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" loading="lazy" sizes="(max-width: 816px) 100vw, 816px">
                                     </a>
                                 </figure>
@@ -51,7 +51,7 @@ $loop = new WP_Query($args);
 
                             <div class="course-info-item">
                                 <h5 class="alignwide wp-block-post-title">
-                                    <a href="' . $post_url . '" target="_self" rel=""><?php _e($post_title); ?></a>
+                                    <a href="<?php echo $post_url;?>" target="_self" rel=""><?php _e($post_title); ?></a>
                                 </h5>
                                 <div class="schedule">
                                     <p>
@@ -69,7 +69,7 @@ $loop = new WP_Query($args);
                                                 0 85.5 0 112v48h448v-48c0-26.5-21.5-48-48-48z">
                                             </path>
                                         </svg>
-                                        <?php _e('Lịch Khai Giảng: ' . $opening_date); ?>
+                                        <span><?php _e('Lịch Khai Giảng: ' . $opening_date); ?></span>
                                     </p>
                                 </div>
                             </div>

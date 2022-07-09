@@ -1,0 +1,127 @@
+.single-course {
+    a,h1,h2,h3,h4 {
+        color: #001489;
+        font-weight: bold;
+    }
+    .row-large {
+        >.large-9.col  {
+            background: #fff;
+            padding: 10px 15px;
+            border-radius: 5px;
+            box-shadow: 0 4px 10px 1px rgba(204,211,217,.6);
+            header.entry-header {
+                background: #f7f7f7;
+                padding: 15px 10px 0;
+                margin-bottom: 1em;
+                border-radius: 5px;
+                border: none;
+                span.breadcrumb-single-title {
+                    font-weight: bold;
+                }
+            }
+            .single-page {
+                padding: unset;
+                p {
+                    &:first-child {
+                        box-shadow: 1px 2px 10px 1px rgba(204,211,217,.6);
+                        padding: 10px 20px;
+                        border-radius: 10px;
+                        font-weight: 700;
+                    }
+                }
+                #ftwp-container.ftwp-wrap {
+                    nav#ftwp-contents {
+                        border-color: rgba(51,51,51,0.95);
+                        background: rgba(243,243,243,0.95);
+                        border-style: solid;
+                        margin-bottom: 24px;
+                        #ftwp-header {
+                            color: #333;
+                            background: rgba(243,243,243,0.95);
+                            padding: 10px;
+                            position: relative;
+                            .ftwp-icon-number {
+                                position: absolute;
+                                left: 2%;
+                                top: 50%;
+                                transform: translateY(-50%);
+                                &::before {
+                                    content: "\e800" !important;
+                                    font-family: 'fl-icons' !important;
+                                }
+                                &:hover {
+                                    cursor: pointer;
+                                }
+                            }
+                            #ftwp-header-minimize {
+                                position: absolute;
+                                right: 0%;
+                                top: 50%;
+                                transform: translateY(-50%);
+                                &::before {
+                                    content: "\f105" !important;
+                                    font-family: 'fl-icons' !important;
+                                }
+                                &:hover {
+                                    cursor: pointer;
+                                }
+                            }
+                            #ftwp-header-title {
+                                margin: 0 0 0 50px;
+                            }
+                        }
+                        ol#ftwp-list {
+                            display: none;
+                        }
+                    }
+                    
+                }
+            }
+            
+        }
+        .post-sidebar {
+            background: #fff;
+            padding: 10px 15px;
+            border-radius: 5px;
+            box-shadow: 0 4px 10px 1px rgba(204, 211, 217, 0.6);
+            #secondary {
+                .sidebar-title {
+                    background: #ffc22b;
+                    padding: 10px;
+                    height: 45px;
+                    margin-bottom: 15px;
+                    text-align: center;
+                    border-radius: 15px 15px 0 0;
+                    h3 {
+                        margin-top: -3px;
+                        color: #fff;
+                    }
+                }
+                .content-course-items {
+                    ul {
+                        li {
+                            max-width: 100%;
+                            .wp-block-group.alignwide {
+                                display: flex;
+                                .wp-block-post-featured-image {
+                                    max-width: 250px;
+                                }
+                                .wp-block-post-title a{
+                                    line-height: 1.3;
+                                    margin-top: .1em;
+                                    margin-bottom: .1em;
+                                    overflow: hidden;
+                                    text-overflow: ellipsis;
+                                    display: -webkit-box;
+                                    -webkit-box-orient: vertical;
+                                    -webkit-line-clamp: 2;
+                                    height: 2.7em;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
