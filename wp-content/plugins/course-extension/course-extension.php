@@ -12,11 +12,15 @@ Version: 1.0.0
 Author URI: https://www.facebook.com/thanhvan250298/
 */
 define('TEXT_DOMAIN','KOKO');
+
+define('COURSE_DIR', plugin_dir_path( __FILE__ ) );
+
 require plugin_dir_path( __FILE__ ) . 'custom-posttype/course.php';
 require plugin_dir_path( __FILE__ ) . 'inc/custom-roles/teacher.php';
 require plugin_dir_path( __FILE__ ) . 'inc/shortcode/courses-list.php';
 require plugin_dir_path( __FILE__ ) . 'inc/ajax/loadmore.php';
 require plugin_dir_path( __FILE__ ) . 'inc/breadcrumb.php';
+require plugin_dir_path( __FILE__ ) . 'template/coures-item.php';
 
 
 function course_extension_style() {
