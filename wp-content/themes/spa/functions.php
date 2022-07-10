@@ -33,3 +33,20 @@ function ds_admin_theme_style() {
       //  echo '<style>.notice, div.error,  .error, .ui.red.message { display: none; }</style>';
     
 }
+
+// Theme Style
+if (!function_exists('koko_style')) {
+  function koko_style() {
+      wp_enqueue_style( 'theme-style', get_stylesheet_directory_uri() . "/assets/css/koko.min.css", null, null);
+  }
+  add_action('wp_enqueue_scripts', 'koko_style');
+}
+
+// Theme Style
+if (!function_exists('koko_js')) {
+  function koko_js() {
+      wp_enqueue_script( 'theme-style', get_stylesheet_directory_uri() . "/assets/js/koko.min.js", array('jquery'), null);
+  }
+  add_action('wp_enqueue_scripts', 'koko_js');
+}
+
