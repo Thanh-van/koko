@@ -28,3 +28,31 @@
     transform: rotate(360deg); } }
 
 /*# sourceMappingURL=style.css.map */
+.content-course-items .icon-angle-right:before {
+  content: "\f105";
+  background: #fff;
+  padding: 5px 10px;
+  border-radius: 100px;
+  margin-right: -0.75em;
+  top: -1px;
+  color: #004192;
+}
+.content-course-items .load-more{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content-course-items .load-more button{
+  background: linear-gradient(to right, #004192, #2F80ED);
+  border-radius: 99px;
+  border: none;
+  color: #fff;
+  text-align: center;
+}
+.content-course-items .load-more i{
+  margin-right: -0.15em;
+  margin-left: 0.4em;
+}
+.content-course-items{
+  font-family: "Play", sans-serif;
+}

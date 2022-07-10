@@ -8,8 +8,8 @@ if (!function_exists('loadmore')) {
 		exit;
 	}
 }
-add_action( 'wp_ajax_loadmore', 'loadmore' );
-add_action('wp_ajax_nopriv_loadmore', 'loadmore');
+// add_action( 'wp_ajax_loadmore', 'loadmore' );
+// add_action('wp_ajax_nopriv_loadmore', 'loadmore');
 
 // Render
 function loadmore_render($paged){
@@ -25,7 +25,7 @@ function loadmore_render($paged){
 			'meta_value'  => 'DESC',
 			'date'        => 'DESC'
 		),
-		'posts_per_page'  => 6,
+		'posts_per_page'  => 1,
 	);
 	$loop = new WP_Query($args);
 	
@@ -95,7 +95,7 @@ function loadmore_render($paged){
 			$html .= '<p><span>Giảng viên : </span><span>'. $teacher['user_firstname'] . ' ' . $teacher['user_lastname'] .'</span></p>';
 			$html .= '</div>';
 			$html .= '</a>';
-			$html .= '<div class=""><span>Đăng ký ngay</span></div>';
+			$html .= '<div class="">Đăng ký ngay</span></div>';
 			$html .= '</div>';
 			$html .= '<div class="">';
 			$html .= '<p>Số lượng: '. $number .'</p>';

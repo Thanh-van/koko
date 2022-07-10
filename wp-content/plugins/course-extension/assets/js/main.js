@@ -13,12 +13,12 @@
     function loadMoreButton() {
         $('body').on('click', '.load-more-button', function() {
             var paged = $('.load-more-button').attr('data-paged');
-            console.log(paged);
             $.ajax({
                 url: ajaxObject.ajaxurl,
                 type: "POST",
                 data: {
                     action: "loadmore",
+                    posts_per_page: $('.content-course-items').attr('posts_per_page'),
                     paged: paged,
                 },
                 beforeSend: function() {
@@ -31,8 +31,9 @@
                     )
                 },
                 success: function(response) {
+                    console.log(response);
                     $('.load-more').remove('.load-more-'+paged);
-                    $('.content-course-items').append(response);
+                    $('.content-course-items .row.advice-article').append(response.data);
                 },
     
                 error: function(jqXHR, textStatus, errorThrown) {
