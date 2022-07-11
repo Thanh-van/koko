@@ -28,6 +28,5 @@
 	</div>
 </div>
 <?php
-echo 1;
 	do_action('flatsome_after_blog');
 ?>
