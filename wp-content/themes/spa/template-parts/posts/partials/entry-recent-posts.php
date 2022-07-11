@@ -69,7 +69,10 @@ $loop = new WP_Query($args);
                                                 0 85.5 0 112v48h448v-48c0-26.5-21.5-48-48-48z">
                                             </path>
                                         </svg>
-                                        <span><?php _e('Lịch Khai Giảng: ' . $opening_date); ?></span>
+                                        <span>
+                                            <span><?php _e('Lịch Khai Giảng:');?></span>
+                                            <span><?php _e($opening_date); ?></span>
+                                        </span>
                                     </p>
                                 </div>
                             </div>

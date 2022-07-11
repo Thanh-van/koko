@@ -5,6 +5,7 @@
     }
     .row-large {
         >.large-9.col  {
+            max-width: 70%;
             background: #fff;
             padding: 10px 15px;
             border-radius: 5px;
@@ -76,14 +77,21 @@
                     }
                     
                 }
+                .rmp-results-widget {
+                    display: flex;
+                    justify-content: center;
+                }
             }
             
         }
         .post-sidebar {
+            flex: 1;
+            max-width: 30%;
             background: #fff;
             padding: 10px 15px;
             border-radius: 5px;
             box-shadow: 0 4px 10px 1px rgba(204, 211, 217, 0.6);
+            height: fit-content;
             #secondary {
                 .sidebar-title {
                     background: #ffc22b;
@@ -104,7 +112,8 @@
                             .wp-block-group.alignwide {
                                 display: flex;
                                 .wp-block-post-featured-image {
-                                    max-width: 250px;
+                                    max-width: 130px;
+                                    margin-right: 6px;
                                 }
                                 .wp-block-post-title a{
                                     line-height: 1.3;
@@ -116,12 +125,43 @@
                                     -webkit-box-orient: vertical;
                                     -webkit-line-clamp: 2;
                                     height: 2.7em;
+                                    margin-top: -4px;
+                                }
+                                .schedule {
+                                    p {
+                                        font-size: 12px;
+                                        font-weight: 700;
+                                    }
                                 }
                             }
                         }
                     }
                 }
+                .register-form {
+                    background: #ffc22b;
+                    .form-flat {
+                        padding: 30px 30px;
+                        img {
+                            display: none;
+                        }
+                        input {
+                            background: #fff;
+                        }
+                        select {
+                            background: #fff;
+                        }
+                        textarea {
+                            background: #fff;
+                        }
+                        input[type=submit] {
+                            background: #00328b;
+                        }
+                    }
+                }
             }
+        }
+        .same-term-post {
+            margin-top: 64px;
         }
     }
 }

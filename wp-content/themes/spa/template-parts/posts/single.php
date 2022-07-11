@@ -13,11 +13,6 @@
 	</div>
 </article>
 
-<div class="rating">
-	<?php echo do_shortcode('[ratemypost id='.the_ID().'] ')?>
-	<?php echo do_shortcode('[ratemypost-result id='.the_ID().'″] ')?>
-</div>
-
 <?php else : ?>
 
 	<?php get_template_part( 'no-results', 'index' ); ?>

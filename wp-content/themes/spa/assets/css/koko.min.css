@@ -2,6 +2,7 @@
   color: #001489;
   font-weight: bold; }
 .single-course .row-large > .large-9.col {
+  max-width: 70%;
   background: #fff;
   padding: 10px 15px;
   border-radius: 5px;
@@ -55,11 +56,17 @@
           margin: 0 0 0 50px; }
       .single-course .row-large > .large-9.col .single-page #ftwp-container.ftwp-wrap nav#ftwp-contents ol#ftwp-list {
         display: none; }
+    .single-course .row-large > .large-9.col .single-page .rmp-results-widget {
+      display: flex;
+      justify-content: center; }
 .single-course .row-large .post-sidebar {
+  flex: 1;
+  max-width: 30%;
   background: #fff;
   padding: 10px 15px;
   border-radius: 5px;
-  box-shadow: 0 4px 10px 1px rgba(204, 211, 217, 0.6); }
+  box-shadow: 0 4px 10px 1px rgba(204, 211, 217, 0.6);
+  height: fit-content; }
   .single-course .row-large .post-sidebar #secondary .sidebar-title {
     background: #ffc22b;
     padding: 10px;
@@ -75,7 +82,8 @@
     .single-course .row-large .post-sidebar #secondary .content-course-items ul li .wp-block-group.alignwide {
       display: flex; }
       .single-course .row-large .post-sidebar #secondary .content-course-items ul li .wp-block-group.alignwide .wp-block-post-featured-image {
-        max-width: 250px; }
+        max-width: 130px;
+        margin-right: 6px; }
       .single-course .row-large .post-sidebar #secondary .content-course-items ul li .wp-block-group.alignwide .wp-block-post-title a {
         line-height: 1.3;
         margin-top: .1em;
@@ -85,6 +93,26 @@
         display: -webkit-box;
         -webkit-box-orient: vertical;
         -webkit-line-clamp: 2;
-        height: 2.7em; }
+        height: 2.7em;
+        margin-top: -4px; }
+      .single-course .row-large .post-sidebar #secondary .content-course-items ul li .wp-block-group.alignwide .schedule p {
+        font-size: 12px;
+        font-weight: 700; }
+  .single-course .row-large .post-sidebar #secondary .register-form {
+    background: #ffc22b; }
+    .single-course .row-large .post-sidebar #secondary .register-form .form-flat {
+      padding: 30px 30px; }
+      .single-course .row-large .post-sidebar #secondary .register-form .form-flat img {
+        display: none; }
+      .single-course .row-large .post-sidebar #secondary .register-form .form-flat input {
+        background: #fff; }
+      .single-course .row-large .post-sidebar #secondary .register-form .form-flat select {
+        background: #fff; }
+      .single-course .row-large .post-sidebar #secondary .register-form .form-flat textarea {
+        background: #fff; }
+      .single-course .row-large .post-sidebar #secondary .register-form .form-flat input[type=submit] {
+        background: #00328b; }
+.single-course .row-large .same-term-post {
+  margin-top: 64px; }
 
 /*# sourceMappingURL=koko.min.css.map */
